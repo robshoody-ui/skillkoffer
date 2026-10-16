@@ -231,17 +231,18 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:18px;font-si
 
 <script>
 const categories = [
-  {name:"Tanzen",tone:"lilac",image:"buttons/tanzen.PNG",accent:"#a668d8",surface:"#f0e4f7"},
-  {name:"Meditationen",tone:"turquoise",image:"buttons/meditation.PNG",accent:"#ffd52b",surface:"#fff6cf"},
-  {name:"Qi Gong",tone:"violet",image:"buttons/qi gong.PNG",accent:"#ffd52b",surface:"#fff6cf"},
-  {name:"Yoga",tone:"mustard",image:"buttons/yoga.PNG",accent:"#a66bdd",surface:"#f0e4f7"},
-  {name:"Sonstiges",tone:"soft-yellow",image:"buttons/berührung(1).jpg",accent:"#ffd52b",surface:"#fff6cf"},
-  {name:"Soundscape",tone:"deep-teal",image:"buttons/soundscape.PNG",accent:"#77e5ee",surface:"#dff7f8"},
+  {name:"Tanzen",tone:"lilac",image:"./tanzen.PNG",accent:"#a668d8",surface:"#f0e4f7"},
+  {name:"Meditationen",tone:"turquoise",image:"./meditation.PNG",accent:"#ffd52b",surface:"#fff6cf"},
+  {name:"Qi Gong",tone:"violet",image:"./qi gong.PNG",accent:"#ffd52b",surface:"#fff6cf"},
+  {name:"Yoga",tone:"mustard",image:"./yoga.PNG",accent:"#a66bdd",surface:"#f0e4f7"},
+  {name:"Sonstiges",tone:"soft-yellow",image:"./berührung(1).jpg",accent:"#ffd52b",surface:"#fff6cf"},
+  {name:"Soundscape",tone:"deep-teal",image:"./soundscape.PNG",accent:"#77e5ee",surface:"#dff7f8"},
   {name:"Interaktives",tone:"rose",accent:"#d47491"},
-  {name:"Affirmationen",tone:"light-blue",image:"buttons/affirmationen.PNG",accent:"#77e5ee",surface:"#dff7f8"},
-  {name:"Videos",tone:"gray",image:"buttons/videos.PNG",accent:"#f16a50",surface:"#fde6df"},
+  {name:"Affirmationen",tone:"light-blue",image:"./affirmationen.PNG",accent:"#77e5ee",surface:"#dff7f8"},
+  {name:"Videos",tone:"gray",image:"./videos.PNG",accent:"#f16a50",surface:"#fde6df"},
   {name:"Berührung",tone:"yellow-green",accent:"#a2b947"},
-  {name:"Bilder",tone:"blue",image:"buttons/bilder.PNG",accent:"#f27356",surface:"#fde6df"}
+  {name:"Bilder",tone:"blue",image:"./bilder.PNG",accent:"#f27356",surface:"#fde6df"}
+];
 ];
 const DB_NAME="skillkoffer-db", STORE="items", SETTINGS="settings";
 let db=null, items=[], activeFilter="Alle", affirmationTimer=null, currentUser=null, authGeneration=0, activeFileURL=null, affirmationSetting={itemId:"",frequency:"daily",startedAt:Date.now()};
